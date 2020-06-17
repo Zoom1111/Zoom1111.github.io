@@ -1,0 +1,198 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Welcome to My Blog | Zoom's Blog</title><meta name="description" content="I want to introduction something about myself and my blog."><meta name="keywords" content="zoom,introduction"><meta name="author" content="Zhong Wanli"><meta name="copyright" content="Zhong Wanli"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://zoom1111.github.io/2020/06/17/welcome%20to%20my%20blog/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="article"><meta property="og:title" content="Welcome to My Blog"><meta property="og:url" content="https://zoom1111.github.io/2020/06/17/welcome%20to%20my%20blog/"><meta property="og:site_name" content="Zoom's Blog"><meta property="og:description" content="I want to introduction something about myself and my blog."><meta property="og:image" content="https://zoom1111.github.io/img/archive_img/default4.jpg"><meta property="article:published_time" content="2020-06-17T07:54:34.000Z"><meta property="article:modified_time" content="2020-06-17T09:30:30.177Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  bookmark: {
+    message_prev: 'Press',
+    message_next: 'to bookmark this page'
+  },
+  runtime_unit: 'days',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: {"bookmark":{"message_prev":"Press","message_next":"to bookmark this page"},"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#ffd800","bgDark":"#ffd800","position":"top-center"},
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isanchor: false    
+}</script><script>var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: false
+  }</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img{
+  opacity: 1
+}
+</style></noscript><meta name="generator" content="Hexo 4.2.1"></head><body><canvas class="fireworks"></canvas><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/avatar/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">Articles</div><div class="length_num">1</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">Tags</div><div class="length_num">2</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">Categories</div><div class="length_num">1</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list"></i><span> List</span><i class="fas fa-chevron-down menus-expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Friends</span></a></div><div class="menus_item"><a class="site-page" href="/message/"><i class="fa-fw fa fa-comments"></i><span> Message</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> About</span></a></div></div></div></div><div id="body-wrap"><div id="web_bg" data-type="photo"></div><header class="post-bg" id="page-header" style="background-image: url(/img/archive_img/default4.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">Zoom's Blog</a></span><span class="pull-right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list"></i><span> List</span><i class="fas fa-chevron-down menus-expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Friends</span></a></div><div class="menus_item"><a class="site-page" href="/message/"><i class="fa-fw fa fa-comments"></i><span> Message</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> About</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">Welcome to My Blog</div></div><div id="post-meta"><div class="meta-firstline"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2020-06-17 15:54:34"><i class="far fa-calendar-alt fa-fw"></i> Created 2020-06-17</span><span class="post-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2020-06-17 17:30:30"><i class="fas fa-history fa-fw"></i> Updated 2020-06-17</span></time><span class="post-meta__categories"><span class="post-meta__separator">|</span><i class="fas fa-inbox fa-fw post-meta__icon"></i><a class="post-meta__categories" href="/categories/about-me/">about_me</a></span></div><div class="meta-secondline"> <span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta__icon"></i><span>Word count:</span><span class="word-count">35</span><span class="post-meta__separator">|</span><i class="far fa-clock fa-fw post-meta__icon"></i><span>Reading time: 1 min</span></span></div><div class="meta-thirdline"><span class="post-meta-pv-cv"><span class="post-meta__separator">|</span><i class="far fa-eye fa-fw post-meta__icon"></i><span>Post View:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-commentcount"><span class="post-meta__separator">|</span><i class="far fa-comments fa-fw post-meta__icon"></i><span>Comments:</span><a href="/2020/06/17/welcome%20to%20my%20blog/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count comment-count" data-xid="/2020/06/17/welcome%20to%20my%20blog/" itemprop="commentCount"></span></a></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><p>Hello, guys! </p>
+<p>I’m Zoom who just started blogging. To build this blog, I have taken much time and energy. Fortunately, I managed to build it, even though there were many problems holding me back.</p>
+<img src= "/img/loading.gif" data-src="/.io//06/17/welcome%20to%20my%20blog/avatar.jpg" class title="This is an image"></div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Zhong Wanli</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://zoom1111.github.io/2020/06/17/welcome%20to%20my%20blog/">https://zoom1111.github.io/2020/06/17/welcome%20to%20my%20blog/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/zoom/">zoom</a><a class="post-meta__tags" href="/tags/introduction/">introduction</a></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ee9ae764027e21c" async="async"></script></div></div><div class="post-reward"><button class="reward-button"><i class="fas fa-qrcode"></i> Donate<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="post-qr-code__img" src="/img/reward/wechat.jpg" alt="wechat" onclick="window.open('wxp://f2f0VoIafD7DXy2nRUEDn5HInESrM-Dwz_pn')"/><div class="post-qr-code__desc">wechat</div></li><li class="reward-item"><img class="post-qr-code__img" src="/img/reward/alipay.jpg" alt="alipay" onclick="window.open('https://qr.alipay.com/fkx02058paal2qawfkbml3c')"/><div class="post-qr-code__desc">alipay</div></li></ul></div></button></div><nav class="pagination-post" id="pagination"></nav><hr><div id="post-comment"><div class="comment_headling"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  enableQQ: true,
+  boolean: true,
+  notify: 'false# valine mail notify (true/false) https://github.com/xCss/Valine/wiki',
+  verify: 'false',
+  appId: '08dsKtK6v6KKcEfHENtt6ziT-gzGzoHsz',
+  appKey: 'nTgumbIP3nB6J3mYnA5fjCy4',
+  placeholder: 'Please leave your footprints!',
+  avatar: 'monsterid',
+  meta: guest_info,
+  pageSize: '10',
+  lang: 'en',
+  recordIP: true,
+  serverURLs: '',
+  requiredFields: ['nick','mail'], //设置必填项
+  // 设置Bilibili表情包地址
+  emojiCDN: '//i0.hdslb.com/bfs/emote/', 
+  // 表情title和图片映射
+  emojiMaps: {
+    "tv_doge": "6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png",
+    "tv_亲亲": "a8111ad55953ef5e3be3327ef94eb4a39d535d06.png",
+    "tv_偷笑": "bb690d4107620f1c15cff29509db529a73aee261.png",
+    "tv_再见": "180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png",
+    "tv_冷漠": "b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png",
+    "tv_发怒": "34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png",
+    "tv_发财": "34db290afd2963723c6eb3c4560667db7253a21a.png",
+    "tv_可爱": "9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png",
+    "tv_吐血": "09dd16a7aa59b77baa1155d47484409624470c77.png",
+    "tv_呆": "fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png",
+    "tv_呕吐": "9f996894a39e282ccf5e66856af49483f81870f3.png",
+    "tv_困": "241ee304e44c0af029adceb294399391e4737ef2.png",
+    "tv_坏笑": "1f0b87f731a671079842116e0991c91c2c88645a.png",
+    "tv_大佬": "093c1e2c490161aca397afc45573c877cdead616.png",
+    "tv_大哭": "23269aeb35f99daee28dda129676f6e9ea87934f.png",
+    "tv_委屈": "d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png",
+    "tv_害羞": "a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png",
+    "tv_尴尬": "7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png",
+    "tv_微笑": "70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png",
+    "tv_思考": "90cf159733e558137ed20aa04d09964436f618a1.png",
+    "tv_惊吓": "0d15c7e2ee58e935adc6a7193ee042388adc22af.png",
+    "tv_打脸": "56ab10b624063e966bfcb76ea5dc4794d87dfd47.png",
+    "tv_抓狂": "fe31c08edad661d63762b04e17b8d5ae3c71a757.png",
+    "tv_抠鼻": "c666f55e88d471e51bbd9fab9bb308110824a6eb.png",
+    "tv_斜眼笑": "911f987aa8bc1bee12d52aafe62bc41ef4474e6c.png",
+    "tv_无奈": "ea8ed89ee9878f2fece2dda0ea8a5dbfe21b5751.png",
+    "tv_晕": "5443c22b4d07fb1907ccc610c8e6db254f2461b7.png",
+    "tv_流汗": "cead1c351ab8d79e9f369605beb90148db0fbed3.png",
+    "tv_流泪": "7e71cde7858f0cd50d74b0264aa26db612a8a167.png",
+    "tv_流鼻血": "c32d39db2737f89b904ca32700d140a9241b0767.png",
+    "tv_点赞": "f85c354995bd99e28fc76c869bfe42ba6438eff4.png",
+    "tv_生气": "26702dcafdab5e8225b43ffd23c94ac1ff932654.png",
+    "tv_生病": "8b0ec90e6b86771092a498c54f09fc94621c1900.png",
+    "tv_疑问": "0793d949b18d7be716078349c202c15ff166f314.png",
+    "tv_白眼": "c1d59f439e379ee50eef488bcb5e5378e5044ea4.png",
+    "tv_皱眉": "72ccad6679fea0d14cce648b4d818e09b8ffea2d.png",
+    "tv_目瞪口呆": "0b8cb81a68de5d5365212c99375e7ace3e7891b7.png",
+    "tv_睡着": "8b196675b53af58264f383c50ad0945048290b33.png",
+    "tv_笑哭": "1abc628f6d4f4caf9d0e7800878f4697abbc8273.png",
+    "tv_腼腆": "89712c0d4af73e67f89e35cbc518420380a7f6f4.png",
+    "tv_色": "61822c7e9aae5da76475e7892534545336b23a6f.png",
+    "tv_调侃": "4bc022533ef31544ca0d72c12c808cf4a1cce3e3.png",
+    "tv_调皮": "b9c41de8e82dd7a8515ae5e3cb63e898bf245186.png",
+    "tv_鄙视": "6e72339f346a692a495b123174b49e4e8e781303.png",
+    "tv_闭嘴": "c9e990da7f6e93975e25fd8b70e2e290aa4086ef.png",
+    "tv_难过": "87f46748d3f142ebc6586ff58860d0e2fc8263ba.png",
+    "tv_馋": "fc7e829b845c43c623c8b490ee3602b7f0e76a31.png",
+    "tv_鬼脸": "0ffbbddf8a94d124ca2f54b360bbc04feb6bbfea.png",
+    "tv_黑人问号": "45821a01f51bc867da9edbaa2e070410819a95b2.png",
+    "tv_鼓掌": "1d21793f96ef4e6f48b23e53e3b9e42da833a0f6.png"
+      // ... 更多表情
+  }
+});</script></div></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By Zhong Wanli</div><div class="framework-info"><span>Driven </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div><div class="footer_custom_text">Hi, welcome to my <a href="https://zoom1111.github.io">blog</a>!</div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><button id="readmode" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font_plus" title="Increase Font Size"><i class="fas fa-plus"></i></button><button id="font_minus" title="Decrease Font Size"><i class="fas fa-minus"></i></button><button id="darkmode" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" title="Setting"><i class="fas fa-cog"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="scroll_to_comment fas fa-comments"></i></a><button id="chat_btn" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><button id="go-up" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="/js/third-party/fireworks.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script id="ribbon_piao" mobile="true" src="/js/third-party/piao.js"></script><script src="/js/third-party/activate-power-mode.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="//code.tidio.co/huaha3asf3vwkzqz7ri91c08hytvyifs.js" async="async"></script><script>(function() {
+  function onTidioChatApiReady() {
+    window.tidioChatApi.hide();
+    window.tidioChatApi.on("close", function() {
+      window.tidioChatApi.hide();
+    });
+  }
+  if (window.tidioChatApi) {
+    window.tidioChatApi.on("ready", onTidioChatApiReady);
+  } else {
+    document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+  }
+
+  document.getElementById("chat_btn").addEventListener("click", function(){
+    window.tidioChatApi.show();
+    window.tidioChatApi.open();
+});
+})();</script></body></html>
